@@ -5,3 +5,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+button.extra-bottom-margin {
+  margin-bottom: 10px;
+}

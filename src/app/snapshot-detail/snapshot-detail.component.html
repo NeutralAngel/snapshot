@@ -1,8 +1,9 @@
 <mat-card>
-  <button mat-raised-button (click)="goToSnapshots()">Snapshot List</button>
+  <button mat-raised-button (click)="goToSnapshots()" class="extra-bottom-margin">Snapshot List</button>
   <app-snapshot [photo]="snapshot.imgDataUrl"></app-snapshot>
   <div *ngFor="let item of snapshot.items">
     <app-item [item]="item"></app-item>
   </div>
+  <br/>
   <button mat-raised-button (click)="addNewItem()">Add New Item</button>
 </mat-card>
