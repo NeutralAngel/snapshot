@@ -12,7 +12,12 @@ import { MatDialog } from '@angular/material';
 })
 export class SnapshotDetailComponent implements OnInit {
   snapshot: Snapshot;
-  constructor(private route: ActivatedRoute, private snapshotService: SnapshotsService, private dialog: MatDialog, private router: Router) {}
+  constructor(
+    private route: ActivatedRoute,
+    private snapshotService: SnapshotsService,
+    private dialog: MatDialog,
+    private router: Router
+  ) {}
 
   ngOnInit() {
     const id = this.route.snapshot.paramMap.get('id');
