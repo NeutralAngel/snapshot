@@ -23,13 +23,6 @@ export class RekognitionService {
       ua[i] = image.charCodeAt(i);
     }
     const rekognition = new AWS.Rekognition();
-    AWS.config.update({
-      credentials: new Credentials({
-        accessKeyId: '',
-        secretAccessKey: '',
-      }),
-    });
-    AWS.config.update({ region: 'us-east-1' });
     const params = {
       Image: {
         Bytes: imageBytes,
