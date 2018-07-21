@@ -1,0 +1,20 @@
+header {
+  height: 9vh;
+  color: rgba(0, 0, 0, 0.54);
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.header-text {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 2em;
+  padding-left: 0.5em;
+  margin-top: 0.8em;
+  width: 50px;
+}
+
+.header-subtext {
+  font-size: 0.8em;
+  float: right;
+  padding-right: 1.8em;
+  padding-top: 0.5em;
+}

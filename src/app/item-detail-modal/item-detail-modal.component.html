@@ -7,7 +7,7 @@
 <button mat-raised-button (click)="showCamera = true" *ngIf="!showCamera">Add Photo</button>
 <app-camera (photo)="photoTaken($event)" *ngIf="showCamera"></app-camera>
   <mat-form-field>
-    <textarea rows=5 matInput placeholder="Description" formControlName="description"></textarea>
+    <textarea rows=4 matInput placeholder="Description" formControlName="description"></textarea>
   </mat-form-field>
   <mat-form-field>
     <input matInput placeholder="Serial Number" formControlName="serialNumber">

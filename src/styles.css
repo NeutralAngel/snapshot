@@ -9,3 +9,11 @@ body {
 button.extra-bottom-margin {
   margin-bottom: 10px;
 }
+
+body {
+  margin: 0px;
+}
+
+mat-card {
+  margin: 8px;
+}

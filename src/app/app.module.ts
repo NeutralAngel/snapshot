@@ -24,6 +24,7 @@ import { SnapshotDetailComponent } from './snapshot-detail/snapshot-detail.compo
 import { ItemVerificationComponent } from './item-verification/item-verification.component';
 import { ItemDetailModalComponent } from './item-detail-modal/item-detail-modal.component';
 import { ItemComponent } from './item/item.component';
+import { HeaderComponent } from './header/header.component';
 
 const appRoutes: Routes = [
   {
@@ -51,6 +52,7 @@ const appRoutes: Routes = [
     ItemVerificationComponent,
     ItemDetailModalComponent,
     ItemComponent,
+    HeaderComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
