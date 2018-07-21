@@ -1,0 +1,26 @@
+<h2 mat-dialog-title>
+  {{item}}</h2>
+<form [formGroup]="itemForm">
+  <mat-form-field *ngIf="!item">
+    <input matInput  placeholder="Item Name" formControlName="itemName">
+  </mat-form-field>
+<button mat-raised-button (click)="showCamera = true" *ngIf="!showCamera">Add Photo</button>
+<app-camera (photo)="photoTaken($event)" *ngIf="showCamera"></app-camera>
+  <mat-form-field>
+    <textarea rows=5 matInput placeholder="Description" formControlName="description"></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Serial Number" formControlName="serialNumber">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Purchase Date" formControlName="purchaseDate">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Value" type="number" class="example-right-align" formControlName="value">
+    <span matPrefix>$&nbsp;</span>
+    <span matSuffix>.00</span>
+  </mat-form-field>
+  <button mat-raised-button (click)="save()">Save</button>
+</form>

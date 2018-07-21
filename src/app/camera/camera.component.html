@@ -1,0 +1,4 @@
+  <video [hidden]="photoData" #video autoplay playsinline></video>
+  <canvas [hidden]="!photoData" #canvas></canvas>
+  <button mat-raised-button (click)="takePhoto()" *ngIf="!photoData">Take Photo</button>
+  <button mat-raised-button (click)="resetPhoto()" *ngIf="photoData">Reset Photo</button>

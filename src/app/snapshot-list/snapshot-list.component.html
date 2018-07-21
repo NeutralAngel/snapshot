@@ -1,0 +1,7 @@
+<mat-card>
+  <app-camera *ngIf="snapshots?.length === 0 || addNew" (photo)="photoTaken($event)"></app-camera>
+    <button mat-raised-button (click)="addNew = true" *ngIf="snapshots?.length !== 0 && !addNew">Add New Snapshot</button>
+  <div *ngFor="let snapshot of snapshots">
+    <app-snapshot [photo]="snapshot.imgDataUrl" (click)="goToSnapshot(snapshot)"></app-snapshot>
+  </div>
+</mat-card>

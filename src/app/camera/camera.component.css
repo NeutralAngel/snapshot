@@ -1,0 +1,14 @@
+video {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+canvas {
+  padding: 0px;
+  margin: 0px;
+}
+
+button {
+  margin-top: 10px;
+}

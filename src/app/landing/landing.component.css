@@ -1,0 +1,29 @@
+mat-card {
+  height: 90vh;
+  font-family: 'Work Sans', sans-serif;
+}
+
+mat-card-title {
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+div.center {
+  position: relative;
+}
+
+div h2 {
+  text-align: center;
+}
